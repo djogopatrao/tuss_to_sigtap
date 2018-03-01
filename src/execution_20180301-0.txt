@@ -1,0 +1,8 @@
+docs2 = 5769, train = 5192, test = 577
+
+2018-03-01 17:21:19.140761 Carregando o modelo
+MatrixSimilarity<5769 docs, 6000 features>
+2018-03-01 17:21:20.267829 Modelo treinado
+2018-03-01 17:21:20.270742 Validando Modelo de Comparacao
+Teste do modelo: Codigos=1300 Capitulo=3487 Grupo=3031 SubGrupo=2519
+Teste do modelo: Codigos=0.3023959060246569 Capitulo=0.8111188648522912 Grupo=0.7050476855082577 SubGrupo=0.5859502209816236
