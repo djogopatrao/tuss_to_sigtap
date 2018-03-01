@@ -90,25 +90,24 @@ def main():
 
     # parametros
     num_features = 6000
-    resampling_rounds = 1
+    resampling_rounds = 10
 
     # docs = conjunto de mapeamento (gold standard entre tuss e sigtap)
     # docs2 = categorização hierarquica do tuss
     docs,docs2 = read_data()
    
-    train_size = 1/resampling_rounds
-    test_size = 1 - train_size
+    test_size = 1/resampling_rounds
+    train_size = 1 - test_size
 
     for r_round in range(0,resampling_rounds):
         print( "%s Iniciando round %d de resampling" % ( str(datetime.datetime.now()),r_round ) )
 
-        print("train_size=%d, test_size=%d", train_size, test_size )
+        print("train_size=%d, test_size=%d"%(train_size, test_size ))
 
         if train_size < 1.0:
             docs2_train, docs2_test = train_test_split(docs2, train_size=train_size, test_size=test_size)
         else:
             docs2_train, docs2_test = docs2, docs2
-
 
         print("docs2 = %d, train = %d, test = %d"%(len(docs2), len(docs2_train), len(docs2_test)))
 
