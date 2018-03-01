@@ -1,0 +1,9 @@
+2018-03-01 17:09:57.744230 Iniciando round 0 de resampling
+train_size=%d, test_size=%d 1.0 0.0
+docs2 = 5769, train = 5769, test = 5769
+2018-03-01 17:09:57.744292 Carregando o modelo
+MatrixSimilarity<5769 docs, 6000 features>
+2018-03-01 17:09:58.951182 Modelo treinado
+2018-03-01 17:09:58.953743 Validando Modelo de Comparacao
+2018-03-01 17:11:23.739636 Fim da validação
+>1300,3487,3031,2519,4299

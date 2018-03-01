@@ -29,7 +29,7 @@ def read_data():
     return docs, docs2
 
 
-def create_model( docs, docs2, num_features ):
+def create_model( docs2, num_features ):
     #massa_treino, massa_teste = train_test_split(docs, train_size=0.9, test_size=0.1)
     #print("Quantidade de massa de treino = " + str(len(massa_treino)) + " e teste = " + str(len(massa_teste)))
     print(str(datetime.datetime.now()) + " Carregando o modelo")
@@ -61,6 +61,7 @@ def evaluate(docs, docs2, model, dictionary, tfidf ):
         try:
             mais_similar = docs2[sims[0][0]][1]
         except:
+            print("error")
             continue
     #    resultado.append(str(linha.tags[0])[5:] + "|" +      #tuss
     #              str(linha.tags[0][5:6]) + "|" +     #cap
@@ -82,31 +83,47 @@ def evaluate(docs, docs2, model, dictionary, tfidf ):
         if linha.tags[0][8:10] == mais_similar[0][8:10]:
             subgrupo_certos += 1
 
+    print(str(datetime.datetime.now()) + " Fim da validação")
     return  codigos_certos, cap_certos, grupo_certos, subgrupo_certos, resultado
 
 def main():
 
     # parametros
-    num_features=6000
+    num_features = 6000
+    resampling_rounds = 1
 
-    # test/train separação
-
-
+    # docs = conjunto de mapeamento (gold standard entre tuss e sigtap)
+    # docs2 = categorização hierarquica do tuss
     docs,docs2 = read_data()
    
-    docs2_train, docs2_test = train_test_split(docs2, train_size=0.9, test_size=0.1)
+    train_size = 1/resampling_rounds
+    test_size = 1 - train_size
 
-    print("docs2 = %d, train = %d, test = %d\n"%(len(docs2), len(docs2_train), len(docs2_test)))
+    for r_round in range(0,resampling_rounds):
+        print( "%s Iniciando round %d de resampling" % ( str(datetime.datetime.now()),r_round ) )
 
-    model,dictionary,tfidf = create_model( docs, docs2, num_features )
+        print("train_size=%d, test_size=%d", train_size, test_size )
 
-    codigos_certos, cap_certos, grupo_certos, subgrupo_certos, resultado = evaluate( docs, docs2, model, dictionary, tfidf )
+        if train_size < 1.0:
+            docs2_train, docs2_test = train_test_split(docs2, train_size=train_size, test_size=test_size)
+        else:
+            docs2_train, docs2_test = docs2, docs2
 
-    print("Teste do modelo: Codigos=" + str(codigos_certos) + " Capitulo=" + str(cap_certos) + " Grupo=" + str(grupo_certos) + " SubGrupo=" + str(subgrupo_certos) )
-    print("Teste do modelo: Codigos=" + str(codigos_certos/len(docs)) + " Capitulo=" + str(cap_certos/len(docs)) + " Grupo=" + str(grupo_certos/len(docs)) + " SubGrupo=" + str(subgrupo_certos/len(docs)) )
-    if False:
-        for i in resultado:
-            print(i, sep='\n')
 
+        print("docs2 = %d, train = %d, test = %d"%(len(docs2), len(docs2_train), len(docs2_test)))
+
+        # cria um modelo baseado nos dados do TUSS
+        model,dictionary,tfidf = create_model( docs2_train, num_features )
+
+        # realiza avaliação de acurácia do modelo gerado
+        codigos_certos, cap_certos, grupo_certos, subgrupo_certos, resultado = evaluate( docs, docs2, model, dictionary, tfidf )
+
+        #print("Teste do modelo: Codigos;" + str(codigos_certos) + " Capitulo=" + str(cap_certos) + " Grupo=" + str(grupo_certos) + " SubGrupo=" + str(subgrupo_certos) )
+        #print("Teste do modelo: Codigos;" + str(codigos_certos/len(docs)) + " Capitulo=" + str(cap_certos/len(docs)) + " Grupo=" + str(grupo_certos/len(docs)) + " SubGrupo=" + str(subgrupo_certos/len(docs)) )
+
+        print(">%d,%d,%d,%d,%d"%(codigos_certos,cap_certos,grupo_certos,subgrupo_certos,len(docs)))
+
+    
+    
 
 main()

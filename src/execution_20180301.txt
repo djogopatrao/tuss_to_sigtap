@@ -1,0 +1,80 @@
+2018-03-01 16:19:14.085760 Iniciando round 0 de resampling
+docs2 = 5769, train = 5192, test = 577
+2018-03-01 16:19:14.087050 Carregando o modelo
+MatrixSimilarity<5192 docs, 6000 features>
+2018-03-01 16:19:15.165488 Modelo treinado
+2018-03-01 16:19:15.167859 Validando Modelo de Comparacao
+2018-03-01 16:20:40.708223 Fim da validação
+>0,1799,413,398,4299
+2018-03-01 16:20:40.708453 Iniciando round 1 de resampling
+docs2 = 5769, train = 5192, test = 577
+2018-03-01 16:20:40.709702 Carregando o modelo
+MatrixSimilarity<5192 docs, 6000 features>
+2018-03-01 16:20:41.710860 Modelo treinado
+2018-03-01 16:20:41.722446 Validando Modelo de Comparacao
+2018-03-01 16:22:03.482433 Fim da validação
+>0,1641,364,366,4299
+2018-03-01 16:22:03.482638 Iniciando round 2 de resampling
+docs2 = 5769, train = 5192, test = 577
+2018-03-01 16:22:03.483885 Carregando o modelo
+MatrixSimilarity<5192 docs, 6000 features>
+2018-03-01 16:22:04.515329 Modelo treinado
+2018-03-01 16:22:04.528370 Validando Modelo de Comparacao
+2018-03-01 16:23:23.290042 Fim da validação
+>1,1800,449,397,4299
+2018-03-01 16:23:23.290279 Iniciando round 3 de resampling
+docs2 = 5769, train = 5192, test = 577
+2018-03-01 16:23:23.291551 Carregando o modelo
+MatrixSimilarity<5192 docs, 6000 features>
+2018-03-01 16:23:24.319541 Modelo treinado
+2018-03-01 16:23:24.330074 Validando Modelo de Comparacao
+2018-03-01 16:24:43.158384 Fim da validação
+>1,1701,381,374,4299
+2018-03-01 16:24:43.158655 Iniciando round 4 de resampling
+docs2 = 5769, train = 5192, test = 577
+2018-03-01 16:24:43.159955 Carregando o modelo
+MatrixSimilarity<5192 docs, 6000 features>
+2018-03-01 16:24:44.172716 Modelo treinado
+2018-03-01 16:24:44.184767 Validando Modelo de Comparacao
+2018-03-01 16:26:05.862070 Fim da validação
+>1,1876,442,378,4299
+2018-03-01 16:26:05.862295 Iniciando round 5 de resampling
+docs2 = 5769, train = 5192, test = 577
+2018-03-01 16:26:05.863528 Carregando o modelo
+MatrixSimilarity<5192 docs, 6000 features>
+2018-03-01 16:26:06.963409 Modelo treinado
+2018-03-01 16:26:06.973813 Validando Modelo de Comparacao
+2018-03-01 16:27:26.683421 Fim da validação
+>0,1819,484,450,4299
+2018-03-01 16:27:26.683626 Iniciando round 6 de resampling
+docs2 = 5769, train = 5192, test = 577
+2018-03-01 16:27:26.684859 Carregando o modelo
+MatrixSimilarity<5192 docs, 6000 features>
+2018-03-01 16:27:27.863671 Modelo treinado
+2018-03-01 16:27:27.875687 Validando Modelo de Comparacao
+2018-03-01 16:28:46.906631 Fim da validação
+>2,1749,437,368,4299
+2018-03-01 16:28:46.906946 Iniciando round 7 de resampling
+docs2 = 5769, train = 5192, test = 577
+2018-03-01 16:28:46.908333 Carregando o modelo
+MatrixSimilarity<5192 docs, 6000 features>
+2018-03-01 16:28:47.893397 Modelo treinado
+2018-03-01 16:28:47.903382 Validando Modelo de Comparacao
+2018-03-01 16:30:06.172460 Fim da validação
+>1,1783,398,343,4299
+2018-03-01 16:30:06.172668 Iniciando round 8 de resampling
+docs2 = 5769, train = 5192, test = 577
+2018-03-01 16:30:06.173881 Carregando o modelo
+MatrixSimilarity<5192 docs, 6000 features>
+2018-03-01 16:30:07.199887 Modelo treinado
+2018-03-01 16:30:07.211579 Validando Modelo de Comparacao
+2018-03-01 16:31:31.840890 Fim da validação
+>0,1794,474,374,4299
+2018-03-01 16:31:31.841340 Iniciando round 9 de resampling
+docs2 = 5769, train = 5192, test = 577
+2018-03-01 16:31:31.843685 Carregando o modelo
+MatrixSimilarity<5192 docs, 6000 features>
+2018-03-01 16:31:32.916289 Modelo treinado
+2018-03-01 16:31:32.932454 Validando Modelo de Comparacao
+2018-03-01 16:32:54.121493 Fim da validação
+>1,1779,558,453,4299
