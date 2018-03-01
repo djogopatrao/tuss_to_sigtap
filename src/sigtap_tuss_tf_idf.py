@@ -118,8 +118,8 @@ def main():
         # realiza avaliação de acurácia do modelo gerado
         codigos_certos, cap_certos, grupo_certos, subgrupo_certos, resultado = evaluate( docs, docs2, model, dictionary, tfidf )
 
-        #print("Teste do modelo: Codigos;" + str(codigos_certos) + " Capitulo=" + str(cap_certos) + " Grupo=" + str(grupo_certos) + " SubGrupo=" + str(subgrupo_certos) )
-        #print("Teste do modelo: Codigos;" + str(codigos_certos/len(docs)) + " Capitulo=" + str(cap_certos/len(docs)) + " Grupo=" + str(grupo_certos/len(docs)) + " SubGrupo=" + str(subgrupo_certos/len(docs)) )
+        print("Teste do modelo: Codigos;" + str(codigos_certos) + " Capitulo=" + str(cap_certos) + " Grupo=" + str(grupo_certos) + " SubGrupo=" + str(subgrupo_certos) )
+        print("Teste do modelo: Codigos;" + str(codigos_certos/len(docs)) + " Capitulo=" + str(cap_certos/len(docs)) + " Grupo=" + str(grupo_certos/len(docs)) + " SubGrupo=" + str(subgrupo_certos/len(docs)) )
 
         print(">%d,%d,%d,%d,%d"%(codigos_certos,cap_certos,grupo_certos,subgrupo_certos,len(docs)))
 
