@@ -90,26 +90,19 @@ def main():
 
     # parametros
     num_features = 6000
-    resampling_rounds = 10
 
     # docs = conjunto de mapeamento (gold standard entre tuss e sigtap)
     # docs2 = categorização hierarquica do tuss
     docs,docs2 = read_data()
    
-    test_size = 1/resampling_rounds
-    train_size = 1 - test_size
+    for r_round in range(1,10):
+        print( "%s Iniciando round %d de resampling (reduzindo amostras para debug-1)" % ( str(datetime.datetime.now()),r_round ) )
 
-    for r_round in range(0,resampling_rounds):
-        print( "%s Iniciando round %d de resampling" % ( str(datetime.datetime.now()),r_round ) )
+        print("train_size=%d"%(len(docs2)-r_round))
 
-        print("train_size=%d, test_size=%d"%(train_size, test_size ))
+        docs2_train  = docs2[0:len(docs2)-r_round];
 
-        if train_size < 1.0:
-            docs2_train, docs2_test = train_test_split(docs2, train_size=train_size, test_size=test_size)
-        else:
-            docs2_train, docs2_test = docs2, docs2
-
-        print("docs2 = %d, train = %d, test = %d"%(len(docs2), len(docs2_train), len(docs2_test)))
+        print("docs2 = %d, train = %d"%(len(docs2), len(docs2_train)))
 
         # cria um modelo baseado nos dados do TUSS
         model,dictionary,tfidf = create_model( docs2_train, num_features )
@@ -122,7 +115,6 @@ def main():
 
         print(">%d,%d,%d,%d,%d"%(codigos_certos,cap_certos,grupo_certos,subgrupo_certos,len(docs)))
 
-    
     
 
 main()
