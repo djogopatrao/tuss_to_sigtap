@@ -1,0 +1,100 @@
+2018-03-02 09:55:35.848412 Iniciando round 10 de resampling (reduzindo amostras para debug-1)
+train_size=577
+docs2 = 5769, train = 577
+2018-03-02 09:55:35.848491 Carregando o modelo
+MatrixSimilarity<577 docs, 6000 features>
+2018-03-02 09:55:35.956181 Modelo treinado
+2018-03-02 09:55:35.956448 Validando Modelo de Comparacao
+2018-03-02 09:55:45.091752 Fim da validação
+Teste do modelo: Codigos;200 Capitulo=1944 Grupo=668 SubGrupo=857
+Teste do modelo: Codigos;0.04652244708071645 Capitulo=0.4521981856245639 Grupo=0.15538497324959294 SubGrupo=0.19934868574086997
+>10%,200,1944,668,857,4299
+2018-03-02 09:55:45.091836 Iniciando round 20 de resampling (reduzindo amostras para debug-1)
+train_size=1154
+docs2 = 5769, train = 1154
+2018-03-02 09:55:45.091872 Carregando o modelo
+MatrixSimilarity<1154 docs, 6000 features>
+2018-03-02 09:55:45.310048 Modelo treinado
+2018-03-02 09:55:45.311702 Validando Modelo de Comparacao
+2018-03-02 09:56:03.019635 Fim da validação
+Teste do modelo: Codigos;366 Capitulo=2234 Grupo=1304 SubGrupo=1169
+Teste do modelo: Codigos;0.0851360781577111 Capitulo=0.5196557338916027 Grupo=0.30332635496627125 SubGrupo=0.2719237031867876
+>20%,366,2234,1304,1169,4299
+2018-03-02 09:56:03.019728 Iniciando round 30 de resampling (reduzindo amostras para debug-1)
+train_size=1731
+docs2 = 5769, train = 1731
+2018-03-02 09:56:03.019774 Carregando o modelo
+MatrixSimilarity<1731 docs, 6000 features>
+2018-03-02 09:56:03.357258 Modelo treinado
+2018-03-02 09:56:03.360055 Validando Modelo de Comparacao
+2018-03-02 09:56:29.739267 Fim da validação
+Teste do modelo: Codigos;539 Capitulo=2415 Grupo=1691 SubGrupo=1431
+Teste do modelo: Codigos;0.12537799488253082 Capitulo=0.5617585484996511 Grupo=0.39334729006745756 SubGrupo=0.33286810886252616
+>30%,539,2415,1691,1431,4299
+2018-03-02 09:56:29.739381 Iniciando round 40 de resampling (reduzindo amostras para debug-1)
+train_size=2308
+docs2 = 5769, train = 2308
+2018-03-02 09:56:29.739431 Carregando o modelo
+MatrixSimilarity<2308 docs, 6000 features>
+2018-03-02 09:56:30.370803 Modelo treinado
+2018-03-02 09:56:30.374671 Validando Modelo de Comparacao
+2018-03-02 09:57:02.916254 Fim da validação
+Teste do modelo: Codigos;738 Capitulo=2596 Grupo=2160 SubGrupo=1822
+Teste do modelo: Codigos;0.1716678297278437 Capitulo=0.6038613631076994 Grupo=0.5024424284717376 SubGrupo=0.42381949290532683
+>40%,738,2596,2160,1822,4299
+2018-03-02 09:57:02.916388 Iniciando round 50 de resampling (reduzindo amostras para debug-1)
+train_size=2884
+docs2 = 5769, train = 2884
+2018-03-02 09:57:02.916447 Carregando o modelo
+MatrixSimilarity<2884 docs, 6000 features>
+2018-03-02 09:57:03.709308 Modelo treinado
+2018-03-02 09:57:03.711860 Validando Modelo de Comparacao
+2018-03-02 09:57:44.543803 Fim da validação
+Teste do modelo: Codigos;894 Capitulo=3141 Grupo=2647 SubGrupo=1966
+Teste do modelo: Codigos;0.20795533845080252 Capitulo=0.7306350314026517 Grupo=0.6157245871132822 SubGrupo=0.45731565480344266
+>50%,894,3141,2647,1966,4299
+2018-03-02 09:57:44.543956 Iniciando round 60 de resampling (reduzindo amostras para debug-1)
+train_size=3461
+docs2 = 5769, train = 3461
+2018-03-02 09:57:44.544022 Carregando o modelo
+MatrixSimilarity<3461 docs, 6000 features>
+2018-03-02 09:57:45.327014 Modelo treinado
+2018-03-02 09:57:45.329706 Validando Modelo de Comparacao
+2018-03-02 09:58:33.691344 Fim da validação
+Teste do modelo: Codigos;1044 Capitulo=3372 Grupo=2801 SubGrupo=2156
+Teste do modelo: Codigos;0.24284717376133985 Capitulo=0.7843684577808793 Grupo=0.6515468713654339 SubGrupo=0.5015119795301233
+>60%,1044,3372,2801,2156,4299
+2018-03-02 09:58:33.691511 Iniciando round 70 de resampling (reduzindo amostras para debug-1)
+train_size=4038
+docs2 = 5769, train = 4038
+2018-03-02 09:58:33.691585 Carregando o modelo
+MatrixSimilarity<4038 docs, 6000 features>
+2018-03-02 09:58:34.524383 Modelo treinado
+2018-03-02 09:58:34.527325 Validando Modelo de Comparacao
+2018-03-02 09:59:31.130869 Fim da validação
+Teste do modelo: Codigos;1116 Capitulo=3397 Grupo=2806 SubGrupo=2207
+Teste do modelo: Codigos;0.2595952547103978 Capitulo=0.7901837636659689 Grupo=0.6527099325424517 SubGrupo=0.513375203535706
+>70%,1116,3397,2806,2207,4299
+2018-03-02 09:59:31.131052 Iniciando round 80 de resampling (reduzindo amostras para debug-1)
+train_size=4615
+docs2 = 5769, train = 4615
+2018-03-02 09:59:31.131137 Carregando o modelo
+MatrixSimilarity<4615 docs, 6000 features>
+2018-03-02 09:59:32.006513 Modelo treinado
+2018-03-02 09:59:32.011800 Validando Modelo de Comparacao
+2018-03-02 10:00:36.756593 Fim da validação
+Teste do modelo: Codigos;1178 Capitulo=3424 Grupo=2913 SubGrupo=2322
+Teste do modelo: Codigos;0.27401721330541984 Capitulo=0.7964642940218656 Grupo=0.677599441730635 SubGrupo=0.540125610607118
+>80%,1178,3424,2913,2322,4299
+2018-03-02 10:00:36.756794 Iniciando round 90 de resampling (reduzindo amostras para debug-1)
+train_size=5192
+docs2 = 5769, train = 5192
+2018-03-02 10:00:36.756888 Carregando o modelo
+MatrixSimilarity<5192 docs, 6000 features>
+2018-03-02 10:00:37.689085 Modelo treinado
+2018-03-02 10:00:37.694457 Validando Modelo de Comparacao
+2018-03-02 10:01:50.302015 Fim da validação
+Teste do modelo: Codigos;1263 Capitulo=3505 Grupo=3038 SubGrupo=2468
+Teste do modelo: Codigos;0.29378925331472433 Capitulo=0.8153058850895557 Grupo=0.7066759711560828 SubGrupo=0.5740869969760409
+>90%,1263,3505,3038,2468,4299
+

@@ -8,7 +8,7 @@ from gensim.models.doc2vec import LabeledSentence
 import gensim.utils
 import datetime
 from sklearn.model_selection import train_test_split
-
+import random
 
 
 
@@ -95,12 +95,15 @@ def main():
     # docs2 = categorização hierarquica do tuss
     docs,docs2 = read_data()
    
-    for r_round in range(1,10):
+    for r_round in range(10,100,10): # up to 90%
         print( "%s Iniciando round %d de resampling (reduzindo amostras para debug-1)" % ( str(datetime.datetime.now()),r_round ) )
 
-        print("train_size=%d"%(len(docs2)-r_round))
 
-        docs2_train  = docs2[0:len(docs2)-r_round];
+        print("Shuffling array")
+        random.shuffle( docs2 )
+
+        print("Resampling train_size=%d"%round(len(docs2)*r_round/100))
+        docs2_train  = docs2[0:round(len(docs2)*r_round/100)];
 
         print("docs2 = %d, train = %d"%(len(docs2), len(docs2_train)))
 
@@ -113,7 +116,7 @@ def main():
         print("Teste do modelo: Codigos;" + str(codigos_certos) + " Capitulo=" + str(cap_certos) + " Grupo=" + str(grupo_certos) + " SubGrupo=" + str(subgrupo_certos) )
         print("Teste do modelo: Codigos;" + str(codigos_certos/len(docs)) + " Capitulo=" + str(cap_certos/len(docs)) + " Grupo=" + str(grupo_certos/len(docs)) + " SubGrupo=" + str(subgrupo_certos/len(docs)) )
 
-        print(">%d,%d,%d,%d,%d"%(codigos_certos,cap_certos,grupo_certos,subgrupo_certos,len(docs)))
+        print(">%d%%,%d,%d,%d,%d,%d"%(r_round,codigos_certos,cap_certos,grupo_certos,subgrupo_certos,len(docs)))
 
     
 
