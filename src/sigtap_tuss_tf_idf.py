@@ -82,16 +82,9 @@ def evaluate(docs, docs2, model, dictionary, tfidf ):
         except:
             print("error")
             continue
-    #    resultado.append(str(linha.tags[0])[5:] + "|" +      #tuss
-    #              str(linha.tags[0][5:6]) + "|" +     #cap
-    #              ' '.join(linha.words) + '|' +#texto
-    #              str(mais_similar[0][5:6]) + "|" +   #cap res
-    #              str(mais_similar[0][5:]) + "|" +    #res codigo
-    #              str(linha.tags[0][5:6] == mais_similar[0][5:6]) + "|" +   #cap igual
-    #              str(mais_similar[1])  + "|" +      #taxa
-    #              str(linha.tags[0][6:8] == mais_similar[0][6:8]) + "|" +   #grp igual
-    #              str(linha.tags[0][8:10] == mais_similar[0][8:10])         #subgrp igual
-    #              )
+
+        resultado.append(   ' '.join(linha.words) + ","  + " ".join(mais_similar) )
+
     #    print(str(linha.tags[0])[5:] + '|' + str(mais_similar[0][5:]) + '|' + str(mais_similar[1]))
         if linha.tags[0][5:] == mais_similar[0][5:]:
             codigos_certos += 1
@@ -145,6 +138,13 @@ def main():
 
         # realiza avaliação de acurácia do modelo gerado
         codigos_certos, cap_certos, grupo_certos, subgrupo_certos, resultado = evaluate( docs, docs2, model, dictionary, tfidf )
+
+        filename = "/tmp/file-%d.xls"%(r_round)
+        writer = pd.ExcelWriter(filename)
+        pd.DataFrame(resultado).to_excel( writer, "Coisa 1"  )
+        writer.save()
+
+
 
         print("Teste do modelo: Codigos;" + str(codigos_certos) + " Capitulo=" + str(cap_certos) + " Grupo=" + str(grupo_certos) + " SubGrupo=" + str(subgrupo_certos) )
         print("Teste do modelo: Codigos;" + str(codigos_certos/len(docs)) + " Capitulo=" + str(cap_certos/len(docs)) + " Grupo=" + str(grupo_certos/len(docs)) + " SubGrupo=" + str(subgrupo_certos/len(docs)) )
