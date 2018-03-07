@@ -9,6 +9,7 @@ import gensim.utils
 import datetime
 from sklearn.model_selection import train_test_split
 import random
+import pickle
 
 
 
@@ -86,24 +87,31 @@ def evaluate(docs, docs2, model, dictionary, tfidf ):
     print(str(datetime.datetime.now()) + " Fim da validação")
     return  codigos_certos, cap_certos, grupo_certos, subgrupo_certos, resultado
 
+def my_train_test_split( dataset, train_size=0 ):
+    ds = dataset[:]
+    random.shuffle(ds)
+    return ds,ds
+
+
 def main():
 
-    # parametros
+    # parametros TODO dá pau se mudar pra menos
     num_features = 6000
 
     # docs = conjunto de mapeamento (gold standard entre tuss e sigtap)
     # docs2 = categorização hierarquica do tuss
     docs,docs2 = read_data()
    
-    for r_round in range(10,100,10): # up to 90%
-        print( "%s Iniciando round %d de resampling (reduzindo amostras para debug-1)" % ( str(datetime.datetime.now()),r_round ) )
+    test_size = 1
 
+    for r_round in range(1,2): # up to 90%
+        print( "%s Iniciando round %d de resampling (usando mytrain_test_split para debug-1)" % ( str(datetime.datetime.now()),r_round ) )
 
-        print("Shuffling array")
-        random.shuffle( docs2 )
+        test_size /= 10
+        train_size = 1 - test_size
 
-        print("Resampling train_size=%d"%round(len(docs2)*r_round/100))
-        docs2_train  = docs2[0:round(len(docs2)*r_round/100)];
+        print("Resampling train_size=%d"%train_size)
+        docs2_train, docs2_test  = my_train_test_split( docs2, train_size=train_size )
 
         print("docs2 = %d, train = %d"%(len(docs2), len(docs2_train)))
 

@@ -1,0 +1,11 @@
+2018-03-05 17:22:31.786594 Iniciando round 1 de resampling (usando mytrain_test_split para debug-1)
+Resampling train_size=0
+docs2 = 5769, train = 5769
+2018-03-05 17:22:31.790877 Carregando o modelo
+MatrixSimilarity<5769 docs, 6000 features>
+2018-03-05 17:22:33.030184 Modelo treinado
+2018-03-05 17:22:33.032852 Validando Modelo de Comparacao
+2018-03-05 17:24:08.752601 Fim da validação
+Teste do modelo: Codigos;0 Capitulo=1727 Grupo=435 SubGrupo=344
+Teste do modelo: Codigos;0.0 Capitulo=0.4017213305419865 Grupo=0.10118632240055828 SubGrupo=0.08001860897883228
+>1%,0,1727,435,344,4299
