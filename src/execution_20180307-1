@@ -1,0 +1,100 @@
+2018-03-07 14:01:33.545995 shuffling the input file (lazy but workey)
+2018-03-07 14:01:35.106524 Iniciando round 0 de resampling (usando mytrain_test_split para debug-1)
+2018-03-07 14:01:35.106550 Carregando o modelo
+MatrixSimilarity<5192 docs, 6000 features>
+2018-03-07 14:01:36.115994 Modelo treinado
+2018-03-07 14:01:36.118459 Validando Modelo de Comparacao
+2018-03-07 14:03:03.058443 Fim da validação
+Teste do modelo: Codigos;1210 Capitulo=3509 Grupo=2956 SubGrupo=2406
+Teste do modelo: Codigos;0.2814608048383345 Capitulo=0.81623633403117 Grupo=0.6876017678529891 SubGrupo=0.5596650383810189
+SELF>0%,1210,3509,2956,2406,4299
+2018-03-07 14:03:03.058693 shuffling the input file (lazy but workey)
+2018-03-07 14:03:04.622275 Iniciando round 1 de resampling (usando mytrain_test_split para debug-1)
+2018-03-07 14:03:04.622332 Carregando o modelo
+MatrixSimilarity<5192 docs, 6000 features>
+2018-03-07 14:03:05.594367 Modelo treinado
+2018-03-07 14:03:05.604910 Validando Modelo de Comparacao
+2018-03-07 14:04:39.312051 Fim da validação
+Teste do modelo: Codigos;1218 Capitulo=3420 Grupo=2932 SubGrupo=2434
+Teste do modelo: Codigos;0.28332170272156315 Capitulo=0.7955338450802513 Grupo=0.6820190742033031 SubGrupo=0.5661781809723191
+SELF>1%,1218,3420,2932,2434,4299
+2018-03-07 14:04:39.312407 shuffling the input file (lazy but workey)
+2018-03-07 14:04:42.145883 Iniciando round 2 de resampling (usando mytrain_test_split para debug-1)
+2018-03-07 14:04:42.145950 Carregando o modelo
+MatrixSimilarity<5192 docs, 6000 features>
+2018-03-07 14:04:43.214019 Modelo treinado
+2018-03-07 14:04:43.227126 Validando Modelo de Comparacao
+2018-03-07 14:06:04.550965 Fim da validação
+Teste do modelo: Codigos;1246 Capitulo=3535 Grupo=2996 SubGrupo=2479
+Teste do modelo: Codigos;0.28983484531286346 Capitulo=0.8222842521516632 Grupo=0.6969062572691324 SubGrupo=0.5766457315654804
+SELF>2%,1246,3535,2996,2479,4299
+2018-03-07 14:06:04.551201 shuffling the input file (lazy but workey)
+2018-03-07 14:06:06.152401 Iniciando round 3 de resampling (usando mytrain_test_split para debug-1)
+2018-03-07 14:06:06.152457 Carregando o modelo
+MatrixSimilarity<5192 docs, 6000 features>
+2018-03-07 14:06:07.116824 Modelo treinado
+2018-03-07 14:06:07.128281 Validando Modelo de Comparacao
+2018-03-07 14:07:23.158986 Fim da validação
+Teste do modelo: Codigos;1218 Capitulo=3484 Grupo=2979 SubGrupo=2448
+Teste do modelo: Codigos;0.28332170272156315 Capitulo=0.8104210281460805 Grupo=0.6929518492672715 SubGrupo=0.5694347522679692
+SELF>3%,1218,3484,2979,2448,4299
+2018-03-07 14:07:23.159221 shuffling the input file (lazy but workey)
+2018-03-07 14:07:24.716996 Iniciando round 4 de resampling (usando mytrain_test_split para debug-1)
+2018-03-07 14:07:24.717052 Carregando o modelo
+MatrixSimilarity<5192 docs, 6000 features>
+2018-03-07 14:07:25.717752 Modelo treinado
+2018-03-07 14:07:25.729965 Validando Modelo de Comparacao
+2018-03-07 14:08:43.213819 Fim da validação
+Teste do modelo: Codigos;1226 Capitulo=3472 Grupo=2983 SubGrupo=2447
+Teste do modelo: Codigos;0.28518260060479184 Capitulo=0.8076296813212375 Grupo=0.6938822982088858 SubGrupo=0.5692021400325658
+SELF>4%,1226,3472,2983,2447,4299
+2018-03-07 14:08:43.214051 shuffling the input file (lazy but workey)
+2018-03-07 14:08:44.739338 Iniciando round 5 de resampling (usando mytrain_test_split para debug-1)
+2018-03-07 14:08:44.739392 Carregando o modelo
+MatrixSimilarity<5192 docs, 6000 features>
+2018-03-07 14:08:45.788635 Modelo treinado
+2018-03-07 14:08:45.801074 Validando Modelo de Comparacao
+2018-03-07 14:10:01.261289 Fim da validação
+Teste do modelo: Codigos;1226 Capitulo=3525 Grupo=2985 SubGrupo=2445
+Teste do modelo: Codigos;0.28518260060479184 Capitulo=0.8199581297976274 Grupo=0.6943475226796929 SubGrupo=0.5687369155617585
+SELF>5%,1226,3525,2985,2445,4299
+2018-03-07 14:10:01.261535 shuffling the input file (lazy but workey)
+2018-03-07 14:10:02.809403 Iniciando round 6 de resampling (usando mytrain_test_split para debug-1)
+2018-03-07 14:10:02.809455 Carregando o modelo
+MatrixSimilarity<5192 docs, 6000 features>
+2018-03-07 14:10:03.802174 Modelo treinado
+2018-03-07 14:10:03.813510 Validando Modelo de Comparacao
+2018-03-07 14:11:19.642688 Fim da validação
+Teste do modelo: Codigos;1225 Capitulo=3527 Grupo=2981 SubGrupo=2452
+Teste do modelo: Codigos;0.28494998836938823 Capitulo=0.8204233542684345 Grupo=0.6934170737380786 SubGrupo=0.5703652012095837
+SELF>6%,1225,3527,2981,2452,4299
+2018-03-07 14:11:19.642924 shuffling the input file (lazy but workey)
+2018-03-07 14:11:21.205976 Iniciando round 7 de resampling (usando mytrain_test_split para debug-1)
+2018-03-07 14:11:21.206032 Carregando o modelo
+MatrixSimilarity<5192 docs, 6000 features>
+2018-03-07 14:11:22.210971 Modelo treinado
+2018-03-07 14:11:22.223702 Validando Modelo de Comparacao
+2018-03-07 14:12:37.236209 Fim da validação
+Teste do modelo: Codigos;1241 Capitulo=3530 Grupo=3010 SubGrupo=2498
+Teste do modelo: Codigos;0.28867178413584554 Capitulo=0.8211211909746453 Grupo=0.7001628285647825 SubGrupo=0.5810653640381485
+SELF>7%,1241,3530,3010,2498,4299
+2018-03-07 14:12:37.236452 shuffling the input file (lazy but workey)
+2018-03-07 14:12:38.792635 Iniciando round 8 de resampling (usando mytrain_test_split para debug-1)
+2018-03-07 14:12:38.792691 Carregando o modelo
+MatrixSimilarity<5192 docs, 6000 features>
+2018-03-07 14:12:39.761413 Modelo treinado
+2018-03-07 14:12:39.772806 Validando Modelo de Comparacao
+2018-03-07 14:13:55.322923 Fim da validação
+Teste do modelo: Codigos;1202 Capitulo=3448 Grupo=2940 SubGrupo=2428
+Teste do modelo: Codigos;0.27959990695510584 Capitulo=0.8020469876715515 Grupo=0.6838799720865317 SubGrupo=0.5647825075598977
+SELF>8%,1202,3448,2940,2428,4299
+2018-03-07 14:13:55.323171 shuffling the input file (lazy but workey)
+2018-03-07 14:13:56.879943 Iniciando round 9 de resampling (usando mytrain_test_split para debug-1)
+2018-03-07 14:13:56.879997 Carregando o modelo
+MatrixSimilarity<5192 docs, 6000 features>
+2018-03-07 14:13:57.882110 Modelo treinado
+2018-03-07 14:13:57.894482 Validando Modelo de Comparacao
+2018-03-07 14:15:13.560713 Fim da validação
+Teste do modelo: Codigos;1210 Capitulo=3475 Grupo=2972 SubGrupo=2451
+Teste do modelo: Codigos;0.2814608048383345 Capitulo=0.8083275180274483 Grupo=0.6913235636194464 SubGrupo=0.5701325889741801
+SELF>9%,1210,3475,2972,2451,4299
